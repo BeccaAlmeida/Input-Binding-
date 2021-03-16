@@ -1,3 +1,7 @@
+import { ChildItemComponent } from './../components/event/child-item/child-item.component';
+import { EventComponent } from './../components/event/event.component';
+import { ClientComponent } from './../components/input-binding/client/client.component';
+import { InputBindingComponent } from './../components/input-binding/input-binding.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
@@ -14,6 +18,12 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [
+    HomePage,
+    InputBindingComponent,
+    ClientComponent,
+    EventComponent,
+    ChildItemComponent
+  ]
 })
 export class HomePageModule {}

@@ -1,0 +1,19 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Event emitter</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <h1>value: {{ value }}</h1>
+    <ion-item>
+      <app-child-item
+        [title]="title"
+        (plusOne)="incBy(1)"
+        (plusTwo)="incBy(2)"
+        (minusOne)="incBy(-1)"
+        (minusTwo)="incBy(-2)">
+      </app-child-item>
+    </ion-item>
+  </ion-card-content>
+</ion-card>
+

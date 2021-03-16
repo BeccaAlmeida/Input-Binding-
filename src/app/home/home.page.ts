@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  age = 20;
+
   constructor() {}
 
 }

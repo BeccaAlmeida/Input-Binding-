@@ -1,3 +1,14 @@
-<p>
-  input-binding works!
-</p>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Input binding</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-item>First name: {{name}}</ion-item>
+    <ion-item>Last name: {{lastName}}</ion-item>
+    <ion-item>Age: {{ age }}</ion-item>
+    <div *ngFor="let c of clients">
+      <app-client [client]="c"></app-client>
+    </div>
+  </ion-card-content>
+</ion-card>
